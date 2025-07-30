@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: withus-test
+  name: withus-staging
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: withus-test
+      app: withus-staging
   template:
     metadata:
       labels:
-        app: withus-test
+        app: withus-staging
     spec:
       containers:
         - name: withus

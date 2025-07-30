@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: withus-test-ingress
+  name: withus-staging-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
@@ -13,6 +13,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: withus-test-service  # Service의 이름!
+                name: withus-staging-service  # Service의 이름!
                 port:
                   number: 80
