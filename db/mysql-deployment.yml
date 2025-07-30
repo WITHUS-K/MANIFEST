@@ -24,6 +24,6 @@ spec:
             - name: MYSQL_USER
               value: withus
             - name: MYSQL_PASSWORD
-              value: withus1234
+              value: withus7897!
           ports:
             - containerPort: 3306
