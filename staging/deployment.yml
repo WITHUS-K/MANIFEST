@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: withus
-          image: shash042319/withus:latest
+          image: /withus:84c7b6d37e438d59dca1cafda3cf4b9bad58b1d6
           ports:
             - containerPort: 8080
