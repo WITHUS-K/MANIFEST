@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: withus-test
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: withus-test
+  template:
+    metadata:
+      labels:
+        app: withus-test
+    spec:
+      containers:
+        - name: withus
+          image: shash042319/withus:latest
+          ports:
+            - containerPort: 8080
