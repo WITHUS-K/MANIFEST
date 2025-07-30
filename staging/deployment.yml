@@ -17,3 +17,6 @@ spec:
           image: shash042319/withus:80e9eed86be1893b4aa3877c36e385b514d124c3
           ports:
             - containerPort: 8080
+          env:
+            - name: SPRING_PROFILES_ACTIVE
+              value: prod
